@@ -1,0 +1,30 @@
+body{
+    padding: 100px;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 2px #000;
+}
+
+.item.wood {
+    background: brown;
+}
+
+
+.item.arm {
+    background: blueviolet;
+}
+
+
+.item.leg {
+    background: greenyellow;
+}
+
+.item.hide {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
