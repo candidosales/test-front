@@ -1,5 +1,52 @@
 body{
-    padding: 100px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+.row {
+    width: 100%;
+    overflow: auto;
+}
+.col-6{
+    width: 46%;
+    overflow: auto;
+    margin: 0 2%;
+    float: left;
+    height: 50%;
+}
+
+.filter, .filter-type, .filter-description  {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 20%;
+    display: block;
+    float: left;
+    overflow: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.filter-description {
+    width: 50%;
+}
+
+.filter ul, .filter-type ul, .filter-description ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filter ul li, .filter-type ul li , .filter-description ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+.gallery {
+    height: 250px;
 }
 
 .item {
@@ -21,6 +68,20 @@ body{
 
 .item.leg {
     background: greenyellow;
+}
+
+.item.ab {
+    background: red;
+}
+
+
+.item.cd {
+    background: blue;
+}
+
+
+.item.xz {
+    background: green;
 }
 
 .item.hide {

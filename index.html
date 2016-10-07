@@ -5,36 +5,102 @@
         <link rel="stylesheet" href="vendor/slick-1.6.0/slick/slick-theme.css">
     </head>
     <body>
-        <div class="filter">
-            <ul>
-                <li>
-                    Wood
-                    <input class="filter-item" type="checkbox" data-filter="wood" />
-                </li>
-                <li>
-                    Arm
-                    <input class="filter-item" type="checkbox" data-filter="arm" />
-                </li>
-                <li>
-                    Leg
-                    <input class="filter-item" type="checkbox" data-filter="leg" />
-                </li>
-            </ul>
+        <div class="row">
+            <div class="filter-type">
+                <h3>Qual tipo de filtro?</h3>
+                <ul>
+                    <li>
+                        Agrega
+                        <input class="filter-type-item" name="filter-type" type="radio" value="1" checked />
+                    </li>
+                    <li>
+                        Excludente
+                        <input class="filter-type-item" name="filter-type" type="radio" value="2"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-description">
+                <h3>Descrição</h3>
+                <ul>
+                    <li>
+                        <strong>Agrega:</strong> considera todos os tipos de variações no seletor CSS. <i>Exemplo</i>: <pre>.wood, .arm, .woo.arm</pre>
+                    </li>
+                    <li>
+                        <strong>Excludente:</strong> considera somente as combinações no seletor CSS.  <i>Exemplo</i>: <pre>.woo.arm</pre>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="gallery filtering">
-            <div class="item wood"></div>
-            <div class="item wood"></div>
-            <div class="item arm"></div>
-            <div class="item leg"></div>
-            <div class="item wood"></div>
-            <div class="item arm"></div>
-            <div class="item leg"></div>
-            <div class="item wood"></div>
-            <div class="item arm"></div>
-            <div class="item leg"></div>
-            <div class="item wood"></div>
-            <div class="item arm"></div>
-            <div class="item leg"></div>
+        <div class="row">
+            <div class="filter">
+                <h3>Filtro 1</h3>
+                <ul>
+                    <li>
+                        Wood
+                        <input class="filter-item" type="checkbox" data-filter="wood" />
+                    </li>
+                    <li>
+                        Arm
+                        <input class="filter-item" type="checkbox" data-filter="arm" />
+                    </li>
+                    <li>
+                        Leg
+                        <input class="filter-item" type="checkbox" data-filter="leg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="filter">
+                <h3>Filtro 2</h3>
+                <ul>
+                    <li>
+                        AB
+                        <input class="filter-item" type="checkbox" data-filter="ab" />
+                    </li>
+                    <li>
+                        CD
+                        <input class="filter-item" type="checkbox" data-filter="cd" />
+                    </li>
+                    <li>
+                        XZ
+                        <input class="filter-item" type="checkbox" data-filter="xz" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="gallery filtering">
+                    <div class="item wood"></div>
+                    <div class="item wood"></div>
+                    <div class="item arm"></div>
+                    <div class="item leg"></div>
+                    <div class="item wood"></div>
+                    <div class="item arm"></div>
+                    <div class="item leg"></div>
+                    <div class="item wood"></div>
+                    <div class="item arm"></div>
+                    <div class="item leg"></div>
+                    <div class="item wood"></div>
+                    <div class="item arm"></div>
+                    <div class="item leg"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="gallery filtering">
+                    <div class="item ab wood"></div>
+                    <div class="item cd wood"></div>
+                    <div class="item xz wood"></div>
+                    <div class="item ab"></div>
+                    <div class="item cd"></div>
+                    <div class="item xz"></div>
+                    <div class="item ab"></div>
+                    <div class="item cd"></div>
+                    <div class="item xz"></div>
+                    <div class="item ab"></div>
+                    <div class="item cd"></div>
+                    <div class="item xz"></div>
+                </div>
+            </div>
         </div>
         <script src="jquery-3.1.1.js"></script>
         <script src="vendor/slick-1.6.0/slick/slick.js"></script>
