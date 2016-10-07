@@ -14,8 +14,6 @@ $(document).ready(function () {
     var typeFilter = "1";
 
     $filterTypeItems.on('change', function () {
-        console.log($(this).val());
-
         typeFilter = $(this).val();
         filter();
     });
