@@ -22,7 +22,7 @@ h3 {
 .filter, .filter-type, .filter-description  {
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 2%;
     width: 20%;
     display: block;
     float: left;
@@ -31,7 +31,7 @@ h3 {
     border-radius: 5px;
 }
 .filter-description {
-    width: 50%;
+    width: 70%;
 }
 
 .filter ul, .filter-type ul, .filter-description ul {
